@@ -1,0 +1,1 @@
+# android_vendor_samsung_exynos9820-common
