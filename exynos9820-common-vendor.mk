@@ -14,6 +14,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/teegris_v3.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v3.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/vendor.samsung.rilchip.slsi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rilchip.slsi.rc \
+    vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/vendor.samsung.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.rild.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/wifi_brcm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_brcm.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -78,7 +79,6 @@ PRODUCT_PACKAGES += \
     libGLES_mali \
     vulkan.mali \
     libsecnativefeature \
-    libsecril-client \
     libsemnativecarrierfeature \
     libteecl \
     libuniplugin \
@@ -89,8 +89,8 @@ PRODUCT_PACKAGES += \
     libsecaudiocoreutils \
     libwvhidl \
     libSEF.quram \
-    libSemDataProps \
-    libSemTelephonyProps \
+    libVendorSemDataProps \
+    libVendorSemTelephonyProps \
     libcrypto-tm \
     libegis_fp_normal_sensor_test \
     libengmode_client \
@@ -103,6 +103,7 @@ PRODUCT_PACKAGES += \
     libqfp_sensortest \
     libril_sem \
     libsec-ril \
+    libsecril-client \
     libsensorlistener \
     libskeymaster4device \
     libssl-tm \
@@ -117,8 +118,8 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.sim-V1-ndk \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
-    vendor.samsung.hardware.radio_manifest_2_33.xml \
-    vendor.samsung.hardware.sehradio_manifest_2_33.xml \
+    vendor.samsung.hardware.radio_manifest_2_202404.xml \
+    vendor.samsung.hardware.sehradio_manifest_2_202404.xml \
     cass \
     android.hardware.drm@1.4-service.widevine \
     gps \
