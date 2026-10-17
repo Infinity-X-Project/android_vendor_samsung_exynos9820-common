@@ -9,7 +9,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/audio_board_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_board_info.xml \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/gnss/gps.cer:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/gps.cer \
-    vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
+    vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/android.hardware.drm-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm-service.widevine.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/cass.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cass.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/init.vendor.rilcommon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilcommon.rc \
     vendor/samsung/exynos9820-common/proprietary/vendor/etc/init/teegris_v3.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/teegris_v3.rc \
@@ -84,10 +84,8 @@ PRODUCT_PACKAGES += \
     libuniplugin \
     libuuid_vendor \
     sensors.grip \
-    liboemcrypto \
     libprofileparamstorage \
     libsecaudiocoreutils \
-    libwvhidl \
     libSEF.quram \
     libVendorSemDataProps \
     libVendorSemTelephonyProps \
@@ -100,6 +98,7 @@ PRODUCT_PACKAGES += \
     libhwjsqz \
     libiwt \
     libkeymaster_helper \
+    liboemcrypto \
     libqfp_sensortest \
     libril_sem \
     libsec-ril \
@@ -109,6 +108,7 @@ PRODUCT_PACKAGES += \
     libssl-tm \
     libsynaFpSensorTestNwd \
     libuniapi \
+    libwvaidl \
     vendor.samsung.hardware.gnss@2.0 \
     vendor.samsung.hardware.radio-V1-ndk \
     vendor.samsung.hardware.radio.bridge-V1-ndk \
@@ -116,12 +116,12 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.radio.data-V1-ndk \
     vendor.samsung.hardware.radio.messaging-V1-ndk \
     vendor.samsung.hardware.radio.sim-V1-ndk \
-    manifest_android.hardware.drm@1.4-service.widevine.xml \
+    manifest_android.hardware.drm-service.widevine.xml \
     vendor.samsung.hardware.radio.exclude.slsi.xml \
     vendor.samsung.hardware.radio_manifest_2_202404.xml \
     vendor.samsung.hardware.sehradio_manifest_2_202404.xml \
     cass \
-    android.hardware.drm@1.4-service.widevine \
+    android.hardware.drm-service.widevine \
     gps \
     rild \
     tzdaemon \
